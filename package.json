@@ -1,0 +1,22 @@
+{
+  "name": "hopverkefni1vef1",
+  "version": "1.0.0",
+  "description": "Verk1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugrun94/Hopverkefni1Vef1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugrun94/Hopverkefni1Vef1/issues"
+  },
+  "homepage": "https://github.com/hugrun94/Hopverkefni1Vef1#readme",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
