@@ -4,7 +4,10 @@
   "description": "Verk1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass-nomap": "node-sass styles.scss styles.css",
+    "sass": "node-sass --source-map-embed styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/hugrun94/Hopverkefni1Vef1#readme",
   "dependencies": {
+    "browser-sync": "^2.26.3",
     "node-sass": "^4.9.4"
   }
 }
