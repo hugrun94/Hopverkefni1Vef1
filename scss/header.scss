@@ -1,0 +1,10 @@
+@import "scss/config";
+
+@function colors($color-name){
+	@return map-get($colors, $color-name)
+}
+
+
+.header{
+	background-color: colors(black);
+}
