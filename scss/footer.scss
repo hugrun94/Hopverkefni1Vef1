@@ -3,14 +3,50 @@
 @function colors($color-name){
 	@return map-get($colors, $color-name)
 }
+@function fonts($font-name){
+	@return map-get($fonts, $font-name)
+}
+
+footer {
+	background-color: colors(pink);
+	padding: 2rem 0;
+
+	p {
+		margin: 4rem 0rem 1rem 0;
+		text-align: center;
+	}
+}
 
 .footer {
-	background-color: colors(pink);
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	margin: auto;
+	max-width: 97%;
 
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	
 	&__col {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-around;
+		width: 45%;
+	}
+	h5 {
+		margin: 1rem 0;
+		font-size: 1.5rem;
+		font-family: fonts(verdana);
+		color: colors(black);
+		font-weight: bold;
+	}
+	a {
+		margin: 0.4rem 0;
+		font-family: fonts(verdana);
+		color: colors(yellow);
+		text-decoration: none;
 	}
 } 
