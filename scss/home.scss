@@ -6,9 +6,9 @@
 main{
 	display: flex;
 
-	content__row{
+	.content__row{
 		display:flex;
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	.content__col{
@@ -21,11 +21,19 @@ main{
 		p{
 			font-family: fonts(verdana);
 			font-weight: lighter;
+			font-size: 12px;
 		}
-		 
+
 		img{
 			display: flex;
 			max-width: 100%;
-	}
+		}
+		button{
+			border-width: 10px;
+			border-style: colors(pink),solid;
+			border-radius: 8px;
+			border-color: colors(pink);
+			background-color:colors(pink);
+		}
 	}	
 }
