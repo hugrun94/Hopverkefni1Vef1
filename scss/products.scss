@@ -8,10 +8,13 @@
 }
 
 .content {
+	display: flex;
 	flex-wrap: wrap; 
 	margin: auto; 
-	display: flex;
-	max-width: 90%;
+	margin-top: 30px;
+	justify-content: space-around;
+	max-width: 97%;
+
 	
 	h2, h3{
 		font-family: fonts(oswald);
@@ -30,10 +33,11 @@
 
 	&__col{
 		flex-direction: column;
+		justify-content: space-around;
 		display: grid; 
 		display: flex; 
-		max-width: 45%;
-		padding-right: 5px; 
+		max-width: 47%;
+	
 	}
 	&__image{
 		flex: 0 0 100px;
@@ -44,5 +48,14 @@
 
 	fieldset{
 		border-style: none; 
+	}
+	button{
+		border-width: 1px; 
+		border-color: grey; 
+		padding: 5px; 
+		background-color: white; 
+	}
+	&__button{
+	 
 	}
 }
