@@ -3,3 +3,29 @@
 @function colors($color-name){
 	@return map-get($colors, $color-name)
 }
+main{
+	display: flex;
+
+	content__row{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.content__col{
+		width:50%;
+
+		h3{
+			font-family: fonts(oswald);
+		}
+
+		p{
+			font-family: fonts(verdana);
+			font-weight: lighter;
+		}
+		 
+		img{
+			display: flex;
+			max-width: 100%;
+	}
+	}	
+}
