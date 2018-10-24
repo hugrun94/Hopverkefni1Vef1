@@ -18,10 +18,12 @@
 	
 	h2, h3{
 		font-family: fonts(oswald);
+		margin-top: 15px; 
 	}
 
-	p{
+	p, legend{
 		font-family: fonts(verdana);
+		margin-top: 15px; 
 	}
 
 	// &__row{
@@ -49,13 +51,23 @@
 	fieldset{
 		border-style: none; 
 	}
+	
 	button{
 		border-width: 1px; 
 		border-color: grey; 
 		padding: 5px; 
 		background-color: white; 
+		border-radius: 2px; 
+		max-width:120px;
+		
 	}
-	&__button{
-	 
+
+	button img{
+		//display: inline-block;
+		//vertical-align:middle;
+		//text-align:right;
+		height:15%;
+		width:15%;
+		
 	}
 }
