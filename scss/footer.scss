@@ -3,3 +3,14 @@
 @function colors($color-name){
 	@return map-get($colors, $color-name)
 }
+
+.footer {
+	background-color: colors(pink);
+	display: flex;
+	flex-direction: row;
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+	}
+} 
