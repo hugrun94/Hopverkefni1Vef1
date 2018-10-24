@@ -3,3 +3,45 @@
 @function colors($color-name){
 	@return map-get($colors, $color-name)
 }
+@function fonts($font-name){
+	@return map-get($fonts, $font-name)
+}
+
+.content {
+	flex-wrap: wrap; 
+	margin: auto; 
+	display: flex;
+	max-width: 90%;
+	
+	h2, h3{
+		font-family: fonts(oswald);
+	}
+
+	p{
+		font-family: fonts(verdana);
+	}
+
+	// &__row{
+	//  flex-direction: row; 
+	// 	flex-wrap: wrap; 
+	// 	justify-content: space-around;
+	// 	display: flex; 
+	}
+	&__col{
+		flex-direction: column;
+		display: grid; 
+		display: flex; 
+		max-width: 45%;
+		padding-right: 5px; 
+	}
+	&__image{
+		flex: 0 0 100px;
+	}
+	&__img{
+		max-width: 100%;
+	}
+
+	fieldset{
+		border-style: none; 
+	}
+}
