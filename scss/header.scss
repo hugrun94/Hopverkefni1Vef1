@@ -3,8 +3,24 @@
 @function colors($color-name){
 	@return map-get($colors, $color-name)
 }
-
+@function fonts($font-name){
+	@return map-get($fonts, $font-name)
+}
 
 header{
 	background-color: colors(green);
+	text-align: center;
+	padding: $gutter;
+
+	h1{
+		font-size:2rem;
+		font-family: fonts(oswald);
+
+	}
+	a{
+		text-decoration: none;
+		color: colors(black);
+	}
 }
+
+
