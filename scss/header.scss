@@ -11,16 +11,25 @@ header{
 	background-color: colors(green);
 	text-align: center;
 	padding: $gutter;
+			font-family: fonts(oswald);
+
 
 	h1{
 		font-size:2rem;
-		font-family: fonts(oswald);
 
 	}
 	a{
 		text-decoration: none;
 		color: colors(black);
-	}
-}
+		font-size: 0.8rem;
 
+	}
+	.cart{
+		text-align:right;
+		display: block;
+		font-family: fonts(verdana);
+
+		}
+
+}
 
