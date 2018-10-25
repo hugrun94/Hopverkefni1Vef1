@@ -21,8 +21,23 @@
 
 	&__image{
 		flex: 0 0 250px;
+		left: 0; right: 0; top: 0; bottom: 0;
+		transform-style: preserve-3d; /* stackast í þrívídd */
+		transition: transform 0.2s linear; /* ease, ease-in o.fl. */
+		
+	}
+	&__image:hover{
+		transform: rotateY(180deg);
+	}
+	&__front{
+		overflow: hidden; 
+	}
+	&__back{
+		display: block;
 	}
 	&__img{
 		max-width: 100%;
+		backface-visibility: hidden;  /* ekki sýna það sem er á bakvið */
 	}
+
 }
