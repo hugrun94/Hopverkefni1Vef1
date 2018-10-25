@@ -57,16 +57,18 @@ main{
 
 		.home__butt{
 			margin: $gutter;
-			border-width: 10px;
-			border-style: colors(pink),solid;
-			border-radius: 8px;
-			border-color: colors(pink);
+			border-radius: 6px;
+			border: none;
 			background-color:colors(pink);
 			margin-bottom: $gutter;
-			height:15%;
+			height:12%; 
 			min-width:50%;
 			font-size:1em;
-
+			transition: 0.3s;
+		}
+		.home__butt:hover{
+			background-color:colors(black);
+			color: colors(pink);
 		}
 	}
 	@media(max-width:500px){
