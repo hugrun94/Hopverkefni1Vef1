@@ -25,14 +25,7 @@
 		font-family: fonts(verdana);
 		margin-top: 15px; 
 	}
-
-	// &__row{
-	//  flex-direction: row; 
-	// 	flex-wrap: wrap; 
-	// 	justify-content: space-around;
-	// 	display: flex; 
 	 
-
 	&__col{
 		flex-direction: column;
 		justify-content: space-around;
@@ -76,4 +69,27 @@
 
 input[type=number]{
 	padding: 6px; 
+}
+
+@media(min-width:800px){
+	.content__col{
+		padding-left:$gutter;
+		padding-right:$gutter;
+		width: 50%;
+	}
+	.content{
+		max-width: 100%;
+	}
+}
+
+@media(max-width:1500px){
+	.content__col{
+		padding-left:$gutter;
+		padding-right:$gutter;
+		width: 33.3%;
+
+	}
+	.content{
+		max-width: auto;
+	}	
 }
