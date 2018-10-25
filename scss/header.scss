@@ -10,34 +10,73 @@
 header{
 	background-color: colors(green);
 	text-align: center;
-	padding: $gutter;
 	font-family: fonts(oswald);
+	padding-bottom: $gutter;
+	padding-top: $gutter;
+	z-index:-1;
+	width:100%;
 
+
+	.headercontent{
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		width:100%;
+		position:absolute;
+		z-index:1;
+
+	}
 
 	h1{
 		font-size:2rem;
 
 	}
 	a{
+		padding: 0px 10px;
 		text-decoration: none;
 		color: colors(black);
 		font-size: 0.8rem;
 	}
 
 	.cart{
-		float: right;
 		text-align:right;
 		font-family: fonts(verdana);
+		padding-bottom: $gutter;
 	}
 
 	img{
 		display: inline-block;
 		vertical-align:middle;
 		text-align:right;
-		height:5%;
-		width:5%;
+		max-height:5%;
+		max-width:5%;
+
+	}
+	@media(max-width:500px){
+		.headercontent{
+			position:relative;
+		}
+	
+		.cart{
+			position:relative;
+			text-align:center;
+
+		}
 	}
 
+	@media(min-width: 1200px){
+		h1{
+			font-size:4em;
+		}
+		a{
+			font-size:1.5em;
+		}
+		img{
+			max-height:30px;
+			max-width:30px;
+		}
+	
+	}
 
 }
 
