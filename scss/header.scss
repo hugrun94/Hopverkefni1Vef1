@@ -17,7 +17,7 @@ header{
 	width:100%;
 
 
-	.headercontent{
+	.headercontent {
 		display:flex;
 		flex-direction:row;
 		justify-content:center;
@@ -36,6 +36,15 @@ header{
 		text-decoration: none;
 		color: colors(black);
 		font-size: 0.8rem;
+		transition: 0.5s;
+	}
+
+	a:hover{
+		color: colors(blue);
+		
+	}
+	.cart:hover{
+		color: colors(blue);
 	}
 
 	.cart{
@@ -52,6 +61,7 @@ header{
 		max-width:5%;
 
 	}
+
 	@media(max-width:500px){
 		.headercontent{
 			position:relative;
