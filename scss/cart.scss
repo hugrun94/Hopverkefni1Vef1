@@ -3,3 +3,44 @@
 @function colors($color-name){
 	@return map-get($colors, $color-name)
 }
+
+
+.cart__all{
+	h2{
+		font-size: 18px;
+	}
+	display: flex;
+	margin-top:$gutter;
+	margin-left: none;
+	justify-content:center;
+
+	.cartcontent{
+		max-width:1200px;
+
+		.cart__row{
+			display:flex;
+			justify-content: space-between;
+			flex-direction: row;
+
+
+			.image{
+				max-width: 100%;
+				max-height:100%;
+			}
+
+
+			.cart__col{
+				max-height:50%;
+
+				h3{
+
+				}
+
+				p{
+					
+				}
+		}
+	}
+}
+}
+

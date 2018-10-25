@@ -7,6 +7,13 @@ main{
 	display: flex;
 	margin-top:$gutter;
 	margin-left: none;
+	justify-content:center;
+
+
+	.home{
+		max-width:1200px;
+
+	}
 
 	.home__row{
 		display:flex;
@@ -35,7 +42,7 @@ main{
 
 		p{
 			margin: $gutter;
-			font-family: fonts(opensans);
+			//font-family: fonts(opensans);
 			font-weight: lighter;
 			font-size: 1.5em;
 			margin-bottom:$gutter;
@@ -98,8 +105,7 @@ main{
 
 	@media(min-width:1500px){
 		.home__row{
-			margin-left:15%;
-			margin-right:15%;
+		
 			}
 		}
 		.home__butt{
