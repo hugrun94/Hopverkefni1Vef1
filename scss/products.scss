@@ -55,6 +55,9 @@
 		max-width:120px;
 		
 	}
+	button:hover{
+		background-color:colors(pink);
+	}
 
 	button img{
 		//display: inline-block;
@@ -79,17 +82,19 @@ input[type=number]{
 	}
 	.content{
 		max-width: 100%;
+		max-width: 1200px;
 	}
 }
 
-@media(max-width:1500px){
+@media(min-width:1500px){
 	.content__col{
 		padding-left:$gutter;
 		padding-right:$gutter;
-		width: 33.3%;
+		width: 33.3333333%;
 
 	}
 	.content{
-		max-width: auto;
+		max-width: 100%;
+		max-width: 1200px;
 	}	
 }
