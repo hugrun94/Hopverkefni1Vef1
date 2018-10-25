@@ -25,20 +25,14 @@
 		font-family: fonts(verdana);
 		margin-top: 15px; 
 	}
-
-	// &__row{
-	//  flex-direction: row; 
-	// 	flex-wrap: wrap; 
-	// 	justify-content: space-around;
-	// 	display: flex; 
 	 
-
 	&__col{
 		flex-direction: column;
 		justify-content: space-around;
 		display: grid; 
 		display: flex; 
-		max-width: 47%;
+		max-width: 93%;
+		padding-bottom: 30px; 
 	
 	}
 	&__image{
@@ -49,7 +43,7 @@
 	}
 
 	fieldset{
-		border-style: none; 
+		border-style: none; 	
 	}
 	
 	button{
@@ -70,4 +64,32 @@
 		width:15%;
 		
 	}
+	
+}
+
+input[type=number]{
+	padding: 6px; 
+}
+
+@media(min-width:800px){
+	.content__col{
+		padding-left:$gutter;
+		padding-right:$gutter;
+		width: 50%;
+	}
+	.content{
+		max-width: 100%;
+	}
+}
+
+@media(max-width:1500px){
+	.content__col{
+		padding-left:$gutter;
+		padding-right:$gutter;
+		width: 33.3%;
+
+	}
+	.content{
+		max-width: auto;
+	}	
 }
