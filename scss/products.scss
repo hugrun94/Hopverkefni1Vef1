@@ -38,7 +38,8 @@
 		justify-content: space-around;
 		display: grid; 
 		display: flex; 
-		max-width: 47%;
+		max-width: 93%;
+		padding-bottom: 30px; 
 	
 	}
 	&__image{
@@ -49,7 +50,7 @@
 	}
 
 	fieldset{
-		border-style: none; 
+		border-style: none; 	
 	}
 	
 	button{
@@ -70,4 +71,9 @@
 		width:15%;
 		
 	}
+	
+}
+
+input[type=number]{
+	padding: 6px; 
 }
