@@ -10,12 +10,23 @@
 		font-size: 18px;
 	}
 	display: flex;
+	flex-direction: column;
 	margin-top:$gutter;
 	margin-left: none;
 	justify-content:center;
 
 	.cartcontent{
 		max-width:1200px;
+
+		.Boi{
+			display:flex;
+			flex-direction:column;
+			justify-content: space-between;
+		}
+		.cart__col{
+			display:flex;
+			flex-direction:column;
+		}
 
 		.cart__row{
 			display:flex;
@@ -30,7 +41,6 @@
 
 
 			.cart__col{
-				max-height:50%;
 
 				h3{
 
