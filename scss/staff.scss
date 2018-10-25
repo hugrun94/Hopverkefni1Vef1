@@ -3,3 +3,26 @@
 @function colors($color-name){
 	@return map-get($colors, $color-name)
 }
+@function fonts($font-name){
+	@return map-get($fonts, $font-name)
+}
+
+.staff {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+
+	&__col{
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		max-width: 94%;
+	}
+
+	&__image{
+		flex: 0 0 250px;
+	}
+	&__img{
+		max-width: 100%;
+	}
+}
