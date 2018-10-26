@@ -30,13 +30,9 @@
 
 	&__card{
 		transform-style: preserve-3d; 
-		transition: transform 2s linear; 
+		transition: transform 1s linear; 
 		display: flex;
 		flex-direction: column;
-	}
-
-	&__content{
-		display: hidden;
 	}
 
 	&__col:hover &__card{
@@ -45,9 +41,7 @@
 		transition-timing-function: ease-in-out;
 
 	}
-	&__back{
-		display: hidden; 
-	}
+	
 	&__content{
 		transform: rotateY(180deg);
 		transition-timing-function: ease-in-out;
