@@ -16,12 +16,12 @@ header{
 	padding-top: $gutter;
 	z-index:-1;
 	width:100%;
-
+	
 	img{
 		max-width: 15px;
 		max-height: 15px;
 	}
-
+	
 	.headercontent {
 		display:flex;
 		flex-direction:row;
@@ -31,11 +31,11 @@ header{
 		z-index:1;
 		padding-left: 20%;
 	}
-
-
+	
+	
 	h1{
 		font-size:2rem;
-
+		
 	}
 	a{
 		padding: 0px 10px;
@@ -44,7 +44,7 @@ header{
 		font-size: 0.8rem;
 		transition: 0.5s;
 	}
-
+	
 	a:hover{
 		color: colors(blue);
 		
@@ -52,7 +52,7 @@ header{
 	.header__cart:hover{
 		color: colors(blue);
 	}
-
+	
 	.header__cart{
 		margin: auto;
 		text-align:right;
@@ -60,25 +60,25 @@ header{
 		padding-bottom: $gutter;
 		max-width: 1200px;
 	}
-
+	
 	img{
 		display: inline-block;
 		vertical-align:middle;
 		text-align:right;
-
+		
 	}
-
+	
 	@media(max-width:500px){
 		.headercontent{
 			position:relative;
 		}
-	
+		
 		.header__cart{
 			position:relative;
 			text-align:center;
 		}
 	}
-
+	
 	@media(min-width: 1200px){
 		h1{
 			font-size:4em;
@@ -86,9 +86,9 @@ header{
 		a{
 			font-size:1.5em;
 		}
-	
+		
 	}
-
+	
 }
 
 

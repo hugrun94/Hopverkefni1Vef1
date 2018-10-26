@@ -71,7 +71,7 @@
 	button:hover{
 		background-color:colors(pink);
 		
-	}
+	} 
 	
 	button img{
 		//display: inline-block;
@@ -87,7 +87,7 @@
 		flex-direction: row; 
 		justify-content: space-around;
 		max-width: 800px;
-
+		
 	}
 	&__formcol{
 		max-width: 40%; 
@@ -96,9 +96,9 @@
 		align-content: center; 
 	}
 	fieldset{
-		font: fonts(helvetica)
+		font-family: fonts(helvetica)
 	}
-
+	
 	.form__button{
 		width: 100px; 
 		border-color: pink; 
@@ -110,9 +110,9 @@
 		justify-content: center; 
 		margin: auto; 
 	}
-
-
-		
+	
+	
+	
 }
 @media(min-width: 800px){
 	.cart__form{
