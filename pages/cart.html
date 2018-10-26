@@ -25,54 +25,54 @@
     <h2>Vörur í körfu</h2>
     <div class="cart__content">
       <div class="cart__row">
-        <div class="cart__imgcontainer">
+        <div class="cart__col">
           <img class="cart__image" src="../img/watch.jpg" alt="Ótrúlegt úr">
         </div>
-        <div class="cart__col">
+        <div class="cart__buy">
           <h2>Ótrúlegt úr</h2>
           <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
           <h3>99.900 kr.-</h3>
-        </div>
-        <div class="cart__buy">
+        
           <fieldset>
-            Fjöldi: <input type="number" value="1">
-            <div class="button">
+            <legend>Fjöldi:</legend>
+            <input type="number" value="1">
+            <button class="cart__button">
+                <img src="../img/cart.svg">
               Uppfæra
-            </div>
-            <div class="button">
+            </button>
+            <button class="cart__button">
+                <img src="../img/cart.svg">
               Eyða úr körfu
-            </div>
+            </button>
           </fieldset>
         </div>
-      </div>
-    </div>
-    
-    <div class="cart__content">
-      <div class="cart__row">
-        <div class="cart__imgcontainer">
+        
+     
+      <div class="cart__col">
           <img class="cart__image" src="../img/headphones.jpg" alt="Ótrúlegt úr">
-        </div>
-        <div class="cart__col">
+      </div>
+      <div class="cart__buy">
           <h2>Hágæða heyrnatól</h2>
           <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
           <h3>39.999 kr.-</h3>
-        </div>
-        <div class="cart__buy">
           <fieldset>
             Fjöldi: <input type="number" value="2">
-            <div class="button">
+            <button class="cart__button">
+                <img src="../img/cart.svg">
               Uppfæra
-            </div>
-            <div class=button>
+            </button>
+            <button class="cart__button">
+              <img src="../img/cart.svg">
               Eyða úr körfu
-            </div>
+            </button>
           </fieldset>
         </div>
       </div>
     </div>
-    
-    <div class="form">
-      <div class="form__col">
+
+
+    <div class="cart__form">
+      <div class="cart__formcol">
         <h2>Sendingarupplýsingar</h2>
         <fieldset>
           Nafn: <input type="text">
@@ -266,7 +266,7 @@
             
           </select>
         </div>
-        <div class="form__col">
+        <div class="cart__formcol">
           <h2>Greiðsluupplýsingar</h2>
           <fieldset>
             Kortanúmer: <input type="text">
@@ -306,7 +306,7 @@
         </div>
       </div>
     </div>
-  </div>
+
   <footer>
     <div class="footer">
       <div class="footer__col">
