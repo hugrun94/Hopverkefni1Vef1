@@ -16,6 +16,10 @@ header{
 	z-index:-1;
 	width:100%;
 
+	img{
+		max-width: 15px;
+		max-height: 15px;
+	}
 
 	.headercontent {
 		display:flex;
@@ -43,11 +47,11 @@ header{
 		color: colors(blue);
 		
 	}
-	.cart:hover{
+	.header__cart:hover{
 		color: colors(blue);
 	}
 
-	.cart{
+	.header__cart{
 		text-align:right;
 		font-family: fonts(verdana);
 		padding-bottom: $gutter;
@@ -57,8 +61,6 @@ header{
 		display: inline-block;
 		vertical-align:middle;
 		text-align:right;
-		max-height:30px;
-		max-width:30px;
 
 	}
 
@@ -67,14 +69,9 @@ header{
 			position:relative;
 		}
 	
-		.cart{
+		.header__cart{
 			position:relative;
 			text-align:center;
-		}
-
-		img{
-			max-width: 15px;
-			max-height: 15px;
 		}
 	}
 
