@@ -9,6 +9,11 @@ Hvernig skal setja upp verkefnið:
 `cd Hopverkefni1Vef1`
 `npm install`
 
+Til að vinna í verkefninu:
+Opnum browser-sync með `npm run browser-sync`
+Keyrum sass watch með `npm run sass-watch`
+
+
 Verkefnið er með eftirfarandi skjölum
 -README.md skjal sem gefur til kynna upplýsingar um verkefnið
 - index.html sem er heimasíða síðunnar
