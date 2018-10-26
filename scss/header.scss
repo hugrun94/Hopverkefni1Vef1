@@ -25,10 +25,10 @@ header{
 		display:flex;
 		flex-direction:row;
 		justify-content:center;
-		width:90%;
+		width:80%;
 		position:absolute;
 		z-index:1;
-		padding-left: 10%;
+		padding-left: 20%;
 	}
 
 	h1{
@@ -52,9 +52,11 @@ header{
 	}
 
 	.header__cart{
+		margin: auto;
 		text-align:right;
 		font-family: fonts(verdana);
 		padding-bottom: $gutter;
+		max-width: 1200px;
 	}
 
 	img{
