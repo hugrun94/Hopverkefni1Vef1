@@ -13,7 +13,7 @@
 		margin: auto; 
 		justify-content: space-around;
 		max-width: 100%;
-		 
+		
 	}
 	&__form{
 		flex-wrap: wrap; 
@@ -37,13 +37,13 @@
 	&__col{
 		width: 33.333%;
 		padding: 10px; 
-
+		
 	}
 	&__buy{
 		width: 66.667%;
 		padding: 10px; 
 	}
-
+	
 	&__image{
 		max-width: 100%;
 		flex: 0 0 100px; 
@@ -73,7 +73,7 @@
 		background-color:colors(pink);
 		
 	}
-
+	
 	button img{
 		//display: inline-block;
 		//vertical-align:middle;
