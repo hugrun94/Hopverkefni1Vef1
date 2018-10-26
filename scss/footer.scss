@@ -10,7 +10,7 @@
 footer {
 	background-color: colors(pink);
 	padding: 2rem 0;
-
+	
 	p {
 		margin: 4rem 0rem 1rem 0;
 		text-align: center;
@@ -24,7 +24,7 @@ footer {
 	margin: auto;
 	justify-content: space-between;
 	max-width: 93%;
-
+	
 	a:hover{
 		color: colors(black);
 	}
@@ -34,7 +34,7 @@ footer {
 		flex-direction: column;
 		width: 48%;
 		margin: 2rem 0;
-
+		
 	}
 	h5 {
 		margin-bottom: 1rem;
@@ -50,7 +50,7 @@ footer {
 		text-decoration: none;
 		transition: 0.5s; 
 	}
-
+	
 	
 } 
 @media(min-width: 900px){
@@ -66,5 +66,5 @@ footer {
 		width: 23.3%;
 		flex-wrap: nowrap;
 	}
-
+	
 }

@@ -14,18 +14,18 @@
 	margin-top: 30px;
 	justify-content: space-around;
 	max-width: 97%;
-
+	
 	
 	h2, h3{
 		font-family: fonts(oswald);
 		margin-top: 15px; 
 	}
-
+	
 	p, legend{
 		font-family: fonts(verdana);
 		margin-top: 15px; 
 	}
-	 
+	
 	&__col{
 		flex-direction: column;
 		justify-content: space-around;
@@ -33,7 +33,7 @@
 		display: flex; 
 		max-width: 93%;
 		padding-bottom: 30px; 
-	
+		
 	}
 	&__image{
 		flex: 0 0 100px;
@@ -41,7 +41,7 @@
 	&__img{
 		max-width: 100%;
 	}
-
+	
 	fieldset{
 		border-style: none; 	
 	}
@@ -60,14 +60,10 @@
 		background-color:colors(pink);
 		
 	}
-
+	
 	button img{
-		//display: inline-block;
-		//vertical-align:middle;
-		//text-align:right;
 		height:15%;
-		width:15%;
-		
+		width:15%;	
 	}
 	
 }
@@ -93,7 +89,7 @@ input[type=number]{
 		padding-left:$gutter;
 		padding-right:$gutter;
 		width: 33.3333333%;
-
+		
 	}
 	.content{
 		max-width: 100%;
