@@ -56,7 +56,7 @@
           <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
           <h3>39.999 kr.-</h3>
           <fieldset>
-            Fjöldi: <input type="number" value="2">
+            <legend>Fjöldi:</legend> <input type="number" value="2">
             <button class="cart__button">
                 <img src="../img/cart.svg">
               Uppfæra
@@ -75,9 +75,10 @@
       <div class="cart__formcol">
         <h2>Sendingarupplýsingar</h2>
         <fieldset>
-          Nafn: <input type="text">
+
+          Nafn: <input type="text"><br>
           
-          Heimilisfang: <input type="text">
+          Heimilisfang: <input type="text"><br>
           
           Póstnúmer:
           <select>
@@ -264,29 +265,27 @@
             <option value=" ">900 Vestmannaeyjum</option>
             <option value=" ">902 Vestmannaeyjum</option>
             
-          </select>
+          </select><br>
         </div>
         <div class="cart__formcol">
           <h2>Greiðsluupplýsingar</h2>
           <fieldset>
-            Kortanúmer: <input type="text">
-            
-            Korthafi: <input type="text" name="">
-            
-            <label>Gildistími: </label>
+           Kortanúmer:<input type="text"> <br>
+            Korthafi: <input type="text" name=""> <br>
+            <label>Gildistími: </label><br>
             Mán <select name="month">
-              <option value="January">January</option>
-              <option value="February">February</option>
-              <option value="March">March</option>
-              <option value="April">April</option>
-              <option value="May">May</option>
-              <option value="June">June</option>
-              <option value="July">July</option>
-              <option value="August">August</option>
-              <option value="September">September</option>
-              <option value="October">October</option>
-              <option value="November">November</option>
-              <option value="December">December</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
             </select> 
             Ár <select name="day">
               <option value="2014">2019</option>
@@ -301,10 +300,13 @@
               <option value="2005">2028</option>
               <option value="2004">2029</option>
               <option value="2003">2030</option>
-            </select>
+            </select><br>
           </fieldset>
         </div>
       </div>
+      <button class="form__button">
+          Kaupa
+      </button>
     </div>
 
   <footer>

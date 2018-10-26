@@ -16,22 +16,21 @@
 		 
 	}
 	&__form{
-		flex-wrap: wrap; 
-		margin: auto; 
-		justify-content: space-around;
-		max-width: 100%;
+		display: flex;
+		margin:auto;
 	}
 	h2{
 		font-family: fonts(oswald);
 		padding-bottom: 30px;
+		max-width: 1200px; 
 		
 	}
 	h3{
 		padding-bottom: 10px; 
 		font-family: fonts(oswald);
 	}
-	p{
-		font-family: fonts(verdana);
+	&__buy p{
+		font-family: fonts(helvetica);
 		padding-bottom: 205px; 
 	}
 	&__col{
@@ -83,15 +82,40 @@
 		
 	}
 	&__form{
-		display: flex; 
-		max-width: 100%; 
+		display: flex;  
 		margin: auto; 
 		flex-direction: row; 
+		justify-content: space-around;
+		max-width: 800px;
+
 	}
 	&__formcol{
-		width: 50%; 
+		max-width: 40%; 
 		margin: 10px; 
 		flex-direction: column; 
 		align-content: center; 
+	}
+	fieldset{
+		font: fonts(helvetica)
+	}
+
+	.form__button{
+		width: 100px; 
+		border-color: pink; 
+		padding: 5px; 
+		background-color: colors(pink); 
+		border-radius: 2px; 
+		max-width:300px;
+		transition: 0.5s; 
+		justify-content: center; 
+		margin: auto; 
+	}
+
+
+		
+}
+@media(min-width: 800px){
+	.cart__form{
+		width: 100%;
 	}
 }
