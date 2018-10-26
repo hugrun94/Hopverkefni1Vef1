@@ -5,7 +5,12 @@
 }
 
 
-.cart__all{
+
+.cart{
+	&__image{
+		max-width: 50%;
+		max-height:50%;
+	}
 	h2{
 		font-size: 18px;
 	}
@@ -32,25 +37,17 @@
 			display:flex;
 			justify-content: space-between;
 			flex-direction: row;
-
-
-			.image{
-				max-width: 100%;
-				max-height:100%;
-			}
-
-
-			.cart__col{
-
-				h3{
-
-				}
-
-				p{
-					
-				}
 		}
 	}
 }
+
+
+.cart__imgcontainer {
+	flex: 0 0 150px;
+	margin: auto;
+	max-width: 90%;
 }
 
+.cart__image{
+	max-width: 100%;
+}
