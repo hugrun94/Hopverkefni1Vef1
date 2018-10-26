@@ -3,51 +3,95 @@
 @function colors($color-name){
 	@return map-get($colors, $color-name)
 }
-
-
+@function fonts($font-name){
+	@return map-get($fonts, $font-name)
+}
 
 .cart{
-	&__image{
-		max-width: 50%;
-		max-height:50%;
+	&__content, h2{
+		flex-wrap: wrap; 
+		margin: auto; 
+		justify-content: space-around;
+		max-width: 100%;
+		 
+	}
+	&__form{
+		flex-wrap: wrap; 
+		margin: auto; 
+		justify-content: space-around;
+		max-width: 100%;
 	}
 	h2{
-		font-size: 18px;
+		font-family: fonts(oswald);
+		padding-bottom: 30px;
+		
 	}
-	display: flex;
-	flex-direction: column;
-	margin-top:$gutter;
-	margin-left: none;
-	justify-content:center;
-
-	.cartcontent{
-		max-width:1200px;
-
-		.Boi{
-			display:flex;
-			flex-direction:column;
-			justify-content: space-between;
-		}
-		.cart__col{
-			display:flex;
-			flex-direction:column;
-		}
-
-		.cart__row{
-			display:flex;
-			justify-content: space-between;
-			flex-direction: row;
-		}
+	h3{
+		padding-bottom: 10px; 
+		font-family: fonts(oswald);
 	}
-}
+	p{
+		font-family: fonts(verdana);
+		padding-bottom: 205px; 
+	}
+	&__col{
+		width: 33.333%;
+		padding: 10px; 
 
+	}
+	&__buy{
+		width: 66.667%;
+		padding: 10px; 
+	}
 
-.cart__imgcontainer {
-	flex: 0 0 150px;
-	margin: auto;
-	max-width: 90%;
-}
+	&__image{
+		max-width: 100%;
+		flex: 0 0 100px; 
+	}
+	&__row{
+		display: flex; 
+		flex-wrap: wrap; 
+		max-width: 1220px; 
+		margin: auto;  
+		flex-direction: row; 
+	}
+	fieldset{
+		border-style: none; 	
+	}
+	
+	button{
+		border-width: 1px; 
+		border-color: grey; 
+		padding: 5px; 
+		background-color: white; 
+		border-radius: 2px; 
+		max-width:120px;
+		transition: 0.5s; 
+		
+	}
+	button:hover{
+		background-color:colors(pink);
+		
+	}
 
-.cart__image{
-	max-width: 100%;
+	button img{
+		//display: inline-block;
+		//vertical-align:middle;
+		//text-align:right;
+		height:15%;
+		width:15%;
+		
+	}
+	&__form{
+		display: flex; 
+		max-width: 100%; 
+		margin: auto; 
+		flex-direction: row; 
+	}
+	&__formcol{
+		width: 50%; 
+		margin: 10px; 
+		flex-direction: column; 
+		align-content: center; 
+	}
 }
