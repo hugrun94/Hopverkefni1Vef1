@@ -53,10 +53,12 @@
 		background-color: white; 
 		border-radius: 2px; 
 		max-width:120px;
+		transition: 0.5s; 
 		
 	}
 	button:hover{
 		background-color:colors(pink);
+		
 	}
 
 	button img{
